@@ -24,6 +24,8 @@
     "bootstrap": "^3.3.7",
     "normalize-css": "^4.2.0",
     "angular-bootstrap": "^2.0.1",
-    "angular-route": "^1.5.8"
+    "angular-route": "^1.5.8",
+    "ng-file-upload-shim": "^12.0.4",
+    "ng-file-upload": "^12.0.4"
   }
 }

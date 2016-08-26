@@ -15,6 +15,8 @@ body {
 }
 
 .panel-heading {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     position: relative;
     height: 50px;
     padding: 0;
@@ -98,6 +100,7 @@ body {
 }
 
 .speech {
+    font-family: 'Raleway', sans-serif;
     position: relative;
     background: #4DB788;
     color: white;
@@ -131,6 +134,7 @@ body {
 }
 
 .speech .media-heading {
+    font-family: 'Lobster', cursive;
     font-size: 1.2em;
     color: white;
     display: block;
@@ -162,12 +166,12 @@ body {
 
 .speech-right>.speech {
     background: white;
-    color: #72C4B9;
+    color: #000000  ;
     text-align: right;
 }
 
 .speech-right>.speech .media-heading {
-    color: #72C4B9;
+    color: #000000  ;
 }
 
 .btn-primary,
@@ -229,14 +233,23 @@ body {
     border-color: #00877a;
 }
 
-.btn-primary, .btn-primary:focus, .btn-hover-primary:hover, .btn-hover-primary:active, .btn-hover-primary.active, .btn.btn-active-primary:active, .btn.btn-active-primary.active, .dropdown.open > .btn.btn-active-primary, .btn-group.open .dropdown-toggle.btn.btn-active-primary {
+.btn-primary,
+.btn-primary:focus,
+.btn-hover-primary:hover,
+.btn-hover-primary:active,
+.btn-hover-primary.active,
+.btn.btn-active-primary:active,
+.btn.btn-active-primary.active,
+.dropdown.open> .btn.btn-active-primary,
+.btn-group.open .dropdown-toggle.btn.btn-active-primary {
     background-color: #19a093;
     border-color: #009688;
     color: #fff !important;
 }
+
 .form-control:focus {
     border-color: #009688;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(25,160,147,.6);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(25, 160, 147, .6);
 }

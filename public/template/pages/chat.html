@@ -2,8 +2,7 @@
             <div class="panel">
                 <!--Heading-->
                 <div class="panel-heading" ng-controller="ChatCtrl">
-                    
-                    <h3 class="panel-title" id="chat-title">Chat {{username}}</h3>
+                    <h3 class="panel-title" id="chat-title">{{username | uppercase}}</h3>
                 </div>
 
                 <!--Widget body-->
@@ -20,7 +19,7 @@
                                     </div>
                                     <div class="media-body pad-hor" ng-show="username == msg.username">
                                         <div class="speech">
-                                            <a href="#" class="media-heading">{{msg.username}}</a>
+                                            <p class="media-heading">{{msg.username}}</p>
                                             <p>{{msg.message}}</p>
                                             <p class="speech-time">
                                                 <i class="fa fa-clock-o fa-fw"></i> {{CurrentDate | date:'HH:mm:ss'}} {{CurrentDate | date: 'dd/MM/yyyy'}}
@@ -29,7 +28,7 @@
                                     </div>
                                     <div class="media-body pad-hor speech-right" ng-hide="username == msg.username">
                                         <div class="speech">
-                                            <a href="#" class="media-heading">{{msg.username}}</a>
+                                            <p class="media-heading">{{msg.username}}</p>
                                             <p>{{msg.message}}</p>
                                             <p class="speech-time">
                                                 <i class="fa fa-clock-o fa-fw"></i>  {{CurrentDate | date:'HH:mm:ss'}} {{CurrentDate | date: 'dd/MM/yyyy'}}
@@ -52,7 +51,7 @@
                                     <input type="text" placeholder="Enter your text" class="form-control chat-input" ng-model="msg.text">
                                 </div>
                                 <div class="col-xs-1">
-                                    <button class="btn btn-primary btn-block" type="submit">Send</button>
+                                    <button class="btn btn-primary " type="submit">Send</button>
                                 </div>
                             </div>
                         </form>

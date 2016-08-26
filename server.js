@@ -34,6 +34,13 @@ var ChatDb = require('./app/model');
 
 
 io.sockets.on('connection', function (socket) {
+
+    // On client connected
+    console.log('client connected' + socket.id);
+
+    // send the clients id to the client itself.
+    socket.send(socket.id);
+
     socket.on('send msg', function (data) {
         console.log('server Get message:' + data.message + '\n username' + data.username);
         var newMsg = new ChatDb({ message: data.message, username: data.username });
@@ -45,5 +52,10 @@ io.sockets.on('connection', function (socket) {
                 io.sockets.emit('get msg', data);
             }
         });
+    });
+
+    // On client disconnected
+    socket.on('disconnect', function () {
+        console.log('client disconnected');
     });
 });
