@@ -35,12 +35,9 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
-<<<<<<< HEAD
 
 #Bower
 bower_components
 
 #Visual Code
 .vscode
-=======
->>>>>>> origin/master
